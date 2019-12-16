@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="user_consumer" />
+        <module name="user_common" />
+        <module name="user-provider" />
+        <module name="user-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring_boot_dubbo_01" target="1.8" />
+      <module name="user-api" target="1.8" />
+      <module name="user-provider" target="1.8" />
+      <module name="user_common" target="1.8" />
+      <module name="user_consumer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring_boot_dubbo_01" options="" />
+      <module name="user-api" options="-parameters" />
+      <module name="user-provider" options="-parameters" />
+      <module name="user_common" options="-parameters" />
+      <module name="user_consumer" options="-parameters" />
+    </option>
+  </component>
+</project>
