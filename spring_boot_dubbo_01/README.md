@@ -1,16 +1,16 @@
-#简介#
+#简介
 
 本项目主要用于测试springBoot整合dubbo、分布式服务的构建的基本过程、spi的演示(自定义服务访问的过滤器)
 
-#项目构成#
+#项目构成
 
-##模块简介##
+##模块简介
 1.user-api:dubbo的服务暴露层
 2.user_common:公共层
 2.user-provider:服务提供者
 3.user_consumer:服务消费者
     
-##主要jar包##
+##主要jar包
 ```xml
 <!-- dubbo 2.0.0-->
 <dependency>
@@ -23,7 +23,7 @@
     <artifactId>zkclient</artifactId>
 </dependency>
 ```
-#DUBBO SPI#
+#DUBBO SPI
 本示例主要通过dubbo的spi，自定义过滤器，实现对远程服务访问的控制
 1.自定义一个过滤器实现Filter接口
 ```java
