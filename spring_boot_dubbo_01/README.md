@@ -5,10 +5,10 @@
 # 项目构成
 
 ## 模块简介
-1.user-api:dubbo的服务暴露层
-2.user_common:公共层
-2.user-provider:服务提供者
-3.user_consumer:服务消费者
+    1.user-api:dubbo的服务暴露层
+    2.user_common:公共层
+    3.user-provider:服务提供者
+    4.user_consumer:服务消费者
     
 ## 主要jar包
 ```xml
@@ -24,8 +24,8 @@
 </dependency>
 ```
 # DUBBO SPI
-本示例主要通过dubbo的spi，自定义过滤器，实现对远程服务访问的控制
-1.自定义一个过滤器实现Filter接口
+    本示例主要通过dubbo的spi，自定义过滤器，实现对远程服务访问的控制
+    1.自定义一个过滤器实现Filter接口
 ```java
 /**
  * @Author wangliang
@@ -66,9 +66,9 @@ public class MyFilter implements Filter {
     }
 }
 ```
-2.在resource文件夹下创建META-INF/dubbo文件夹
-3.在META-INF/dubbo下创建文件，文件名为Filter接口的全路径，例：com.alibaba.dubbo.rpc.Filter
-4.文件的内容为键值对形式，key的值为自定义的过滤器名称,值为自定义过滤器的全路径,例：myFilter=com.zym.dubbo.Filter.MyFilter
+    2.在resource文件夹下创建META-INF/dubbo文件夹
+    3.在META-INF/dubbo下创建文件，文件名为Filter接口的全路径，例：com.alibaba.dubbo.rpc.Filter
+    4.文件的内容为键值对形式，key的值为自定义的过滤器名称,值为自定义过滤器的全路径,例：myFilter=com.zym.dubbo.Filter.MyFilter
     
 
 
